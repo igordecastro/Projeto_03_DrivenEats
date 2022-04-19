@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+
+    <title>Driven-Eats</title>
+</head>
+
+<body>
+    <div class="top">
+        <h1>DrivenEats</h1>
+        <p>Sua comida em 6 minutos</p>
+    </div>
+    <div class="container">
+        <h2>Primeiro seu prato</h2>
+        <!-- OPÇÕES DE PRATOS -->
+        <div class="pratos">
+            <div class="prato" onclick="selecionarPrato(this)">
+                <img src="images/frango_yin_yang 1.svg" />
+                <h2 class="nomePrato"><strong>Yin Yang</strong></h2>
+                <p class="FontGrey">Um pouco de batata, um pouco de salada</p>
+                <div class="valor">
+                    <p class="preco">R$ 14,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div class="prato" onclick="selecionarPrato(this)">
+                <img src="images/frango_yin_yang 1.svg" />
+                <h2><strong>Yin Yang Médio</strong></h2>
+                <p class="FontGrey">Quantidade de batata razoável, muita salada</p>
+                <div class="valor">
+                    <p class="preco">R$ 16,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div class="prato" onclick="selecionarPrato(this)">
+                <img src="images/frango_yin_yang 1.svg" />
+                <h2><strong>Yin Yang Grande</strong></h2>
+                <p class="FontGrey">Muita batata (com cheddar e bacon!), muita salada</p>
+                <div class="valor">
+                    <p class="preco">R$ 19,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div class="prato" onclick="selecionarPrato(this)">
+                <img src="images/frango_yin_yang 1.svg" />
+                <h2><strong>Yin Yang Frango</strong></h2>
+                <p class="FontGrey">Um pouco de batata, um pouco de salada só que com frango!</p>
+                <div class="valor">
+                    <p class="preco">R$ 13,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div class="prato" onclick="selecionarPrato(this)">
+                <img src="images/frango_yin_yang 1.svg" />
+                <h2><strong>Yin Yang Frango Médio</strong></h2>
+                <p class="FontGrey">Um pouco de batata, um pouco de salada</p>
+                <div class="valor">
+                    <p class="preco">R$ 15,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <!-- FIM OPÇÕES DE PRATOS -->
+        <h2>Agora, sua bebida</h2>
+        <!-- OPÇÕES DE BEBIDAS -->
+        <div class="bebidas">
+            <div class="bebida" onclick="selecionarBebida(this)">
+                <img src="images/coquinha_gelada 1.svg" />
+                <h2 class="titulo"><strong>Coquinha gelada</strong></h2>
+                <p class="FontGrey descricao">Lata 350ml</p>
+                <div class="valor">
+                    <p class="preco">R$ 6,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div class="bebida" onclick="selecionarBebida(this)">
+                <img src="images/coquinha_gelada 1.svg" />
+                <h2 class="titulo"><strong>Pepsi gelada</strong></h2>
+                <p class="FontGrey descricao">Lata 350ml</p>
+                <div class="valor">
+                    <p class="preco">R$ 5,40</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div class="bebida" onclick="selecionarBebida(this)">
+                <img src="images/coquinha_gelada 1.svg" />
+                <h2 class="titulo"><strong>Guaraná gelado</strong></h2>
+                <p class="FontGrey descricao">Lata 350ml</p>
+                <div class="valor">
+                    <p class="preco">R$ 4,49</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div class="bebida" onclick="selecionarBebida(this)">
+                <img src="images/coquinha_gelada 1.svg" />
+                <h2 class="titulo"><strong>Coquinha gelada mini</strong></h2>
+                <p class="FontGrey descricao">Lata 220ml</p>
+                <div class="valor">
+                    <p class="preco">R$ 4,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div class="bebida" onclick="selecionarBebida(this)">
+                <img src="images/coquinha_gelada 1.svg" />
+                <h2 class="titulo"><strong>Coquinha gelada garrafa</strong></h2>
+                <p class="FontGrey descricao">Garrafa 2L</p>
+                <div class="valor">
+                    <p class="preco">R$ 11,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <!-- FIM OPÇÕES DE BEBIDAS -->
+        <h2>Por fim, sua sobremesa</h2>
+        <!--OPÇÕES DE SOBREMESAS -->
+        <div class="sobremesas">
+            <div class="sobremesa" onclick="selecionarSobremesa(this)">
+                <img src="images/pudim 2.svg" />
+                <h2 class="titulo"><strong>Pudim</strong></h2>
+                <p class="FontGrey descricao">Pudim gostosin</p>
+                <div class="valor">
+                    <p class="preco">R$ 7,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div class="sobremesa" onclick="selecionarSobremesa(this)">
+                <img src="images/pudim 2.svg" />
+                <h2 class="titulo"><strong>Mousse de chocolate</strong></h2>
+                <p class="FontGrey descricao">Mousse delicioso</p>
+                <div class="valor">
+                    <p class="preco">R$ 8,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div class="sobremesa" onclick="selecionarSobremesa(this)">
+                <img src="images/pudim 2.svg" />
+                <h2 class="titulo"><strong>Alfajor</strong></h2>
+                <p class="FontGrey descricao">O alfajor mais famoso da cidade</p>
+                <div class="valor">
+                    <p class="preco">R$ 5,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div class="sobremesa" onclick="selecionarSobremesa(this)">
+                <img src="images/pudim 2.svg" />
+                <h2 class="titulo"><strong>Bolo</strong></h2>
+                <p class="FontGrey descricao">Pedaço de bolo</p>
+                <div class="valor">
+                    <p class="preco">R$ 9,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div class="sobremesa" onclick="selecionarSobremesa(this)">
+                <img src="images/pudim 2.svg" />
+                <h2 class="titulo"><strong>Milkshake</strong></h2>
+                <p class="FontGrey descricao">Milkshake cremoso 700ml</p>
+                <div class="valor">
+                    <p class="preco">R$ 11,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <!-- FIM OPÇÕES DE SOBREMESAS -->
+        <div class="bottom">
+            <div class="botao" onclick="mandarWhatsapp()">
+                Selecione os 3 itens para fechar o pedido
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
